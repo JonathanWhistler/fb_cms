@@ -1,12 +1,12 @@
-- @meta_title = "Welcome!"
+- @meta_title = "fewsel news"
 - @meta_description = "...powered by Facebook Graph API."
 
-%h1.centered= @meta_title
-
-%h2 News
+%h1= @meta_title
 
 - posts.each do |post|
-  %article
-    %p.published_at
-      %time{ :pubdate => "pubdate", :datetime => post.upated_at.iso8601 }= post.date
-    %p= nl2br(linkify post.message)
+  #news
+    #newsdate  
+      %p.published_at
+        %time{ :pubdate => "pubdate", :datetime => post.upated_at.iso8601 }= post.date
+    #newscontent
+      %p= nl2br(linkify post.message)

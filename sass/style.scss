@@ -4,6 +4,7 @@ $light_grey:      #999;
 $highlight_grey:  #cacaca;
 $dark_grey:       #333;
 $white:           #f0f0f0;
+$text:			  #ffffff;
 
 $red:             #DC6A6A;
 $green:           #24820f;
@@ -42,10 +43,20 @@ a {
   text-align: center;
 }
 
+html {
+	background: url('/images/html-bg.png') top center;
+}
+
+body {
+	font-family:Bitter,serif;
+	line-height: 19px;
+	font-size: 14px;
+	color: $text
+}
+
 h1 {
-  font-family:Georgia,serif;
+  font-family:Bitter,serif;
   font-size:250%;
-  font-style:italic;
   font-weight:normal;
   letter-spacing:-1px;
   line-height:1.2em;

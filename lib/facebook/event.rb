@@ -5,7 +5,7 @@ class Facebook::Event < Facebook::GraphObject
   def description
     data["description"]
   end
-
+  
   def address
     data["venue"].merge("location" => location)
   end
@@ -34,7 +34,7 @@ class Facebook::Event < Facebook::GraphObject
     end
 
     def all
-      events = cache("collection") { graph.get_connections(settings.facebook["page_id"], "events") }
+      events = cache("collection") { graph.get_connections("stefan.zoll", "events") }
 
       detailled_events = cache("detailled_events") do
         graph.batch do |batch_api|

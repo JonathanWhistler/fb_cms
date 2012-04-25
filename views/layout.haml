@@ -36,26 +36,31 @@
       })();    
   %body{ :class => "" }
     #container
-      %nav
-        %ul
-          %li
-            %a{:href => url("/") } News
-          %li
-            %a{:href => url("/about") } About
-          %li
-            %a{:href => url("/albums") } Pictures
-          %li
-            %a{:href => url("/events") } Events
-
-      #content{ :role => "main" }
-        = yield
-        .clear
+      #header
+      #leftcol
+        %nav
+          %ul
+            %li
+              %a{:href => url("/") } News
+            %li
+              %a{:href => url("/about") } About
+            %li
+              %a{:href => url("/albums") } Pictures
+            %li
+              %a{:href => url("/events") } Events
+        #logo 
+        #claim   	
+      #rightcol
+        #content{ :role => "main" }
+          = yield
+          .clear
+        .like_box
+          :plain
+            <iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2F#{URI.escape(settings.facebook['fb_page_path'])}&amp;width=600&amp;colorscheme=dark&amp;show_faces=FALSE&amp;border_color=%23f0f0f0&amp;stream=false&amp;header=false&amp;height=258" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:200px; height:60px;" allowTransparency="true"></iframe>
 
       %footer
         .hr_stars
-        .like_box
-          :plain
-            <iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2F#{URI.escape(settings.facebook['fb_page_path'])}&amp;width=600&amp;colorscheme=light&amp;show_faces=true&amp;border_color=%23f0f0f0&amp;stream=false&amp;header=false&amp;height=258" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:600px; height:258px;" allowTransparency="true"></iframe>
+        
 
     %script{ :src => '//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js' }
     -# fall back to local jQuery if necessary

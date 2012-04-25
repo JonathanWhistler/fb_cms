@@ -7,7 +7,15 @@ class Facebook::Page < Facebook::GraphObject
   def description
     data["description"]
   end
-
+  
+  def bio
+    data["bio"]
+  end
+  
+  def influences
+    data["influences"]
+  end
+  
   class << self
 
     def load(id = settings.facebook["page_id"])
