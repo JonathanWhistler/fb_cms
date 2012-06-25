@@ -35,35 +35,38 @@
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();    
   %body{ :class => "" }
-    #container
-      #header
-      #leftcol
+    #header
+      #leftnav
         %nav
           %ul
             %li
-              %a{:href => url("/") } News
+              %a{:href => url("/") } Home
             %li
               %a{:href => url("/about") } About
             %li
               %a{:href => url("/albums") } Pictures
+      #logo	 
+      #rightnav
+        %nav
+          %ul
             %li
               %a{:href => url("/events") } Events
-        #logo 
-        #claim   	
-      #rightcol
-        #content{ :role => "main" }
-          = yield
-          .clear
-        .like_box
-          :plain
-            <iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2F#{URI.escape(settings.facebook['fb_page_path'])}&amp;width=600&amp;colorscheme=dark&amp;show_faces=FALSE&amp;border_color=%23f0f0f0&amp;stream=false&amp;header=false&amp;height=258" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:200px; height:60px;" allowTransparency="true"></iframe>
-
-      %footer
-        .hr_stars
-        
+            %li
+              %a{:href => url("/events") } Events
+            %li
+              %a{:href => url("/events") } Events
+    #container
+      #content{ :role => "main" }
+        = yield
+        .clear
+    #footer
+      #footerlogo
+      .like_box
+        :plain
+          <iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2F#{URI.escape(settings.facebook['fb_page_path'])}&amp;width=600&amp;colorscheme=light&amp;show_faces=true&amp;border_color=%23f0f0f0&amp;stream=false&amp;header=false&amp;height=258" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:600px; height:258px;" allowTransparency="true"></iframe>
 
     %script{ :src => '//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js' }
     -# fall back to local jQuery if necessary
     :javascript
       window.jQuery || document.write("<script src='/javascripts/libs/jquery.min.js'>\x3C/script>")
-    = javascript_includes      
+    = javascript_includes

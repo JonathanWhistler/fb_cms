@@ -8,7 +8,17 @@
     font-weight: normal;
     font-style: normal;
 }
-/*@font-face {
+@font-face {
+    font-family: 'BebasRegular';
+    src: url('BEBAS___-webfont.eot');
+    src: url('BEBAS___-webfont.eot?#iefix') format('embedded-opentype'),
+         url('BEBAS___-webfont.woff') format('woff'),
+         url('BEBAS___-webfont.ttf') format('truetype'),
+         url('BEBAS___-webfont.svg#BebasRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
     font-family: 'Museo500';
     src: url('museo500-regular-webfont.eot');
     src: url('museo500-regular-webfont.eot?#iefix') format('embedded-opentype'),
@@ -17,7 +27,7 @@
          url('museo500-regular-webfont.svg#Museo500') format('svg');
     font-weight: normal;
     font-style: normal;
-}*/
+}
 @font-face {
     font-family: 'Museo300';
     src: url('museo300-regular-webfont.eot');
@@ -228,7 +238,7 @@ html, body {
 	height: 100%;
 }
 html {
-	background: url("/images/html-bg.png") top center;
+	background: url("/images/body-bg.jpg");
 	overflow: -moz-scrollbars-vertical;
 	ms-text-size-adjust: 100%;
 	overflow-y: scroll;
@@ -239,26 +249,32 @@ html {
 	height: auto !important;
 	margin: 0px auto;
 	min-height: 100%;
-	padding: 0;
+	padding: 0 180px 0 180px;
 	text-align: left;
-	width: 1000px;
+	width: 640px;
+	background: #fff url(/images/content-bg.jpg);
+	border: 1px solid #fff;	
 }
 #header {
-	padding: 20px 0 0 0;
-	height: 70px;
+	padding: 0px 0 0 0;
+	height: 140px;
 	text-align: center;
+	width: 1000px;
+	margin: 0 auto 0 auto;
 }
-#leftcol {
-	width: 360px;
-	float: left;
+#leftnav, #rightnav {
+	width: 330px;
+	height: 120px;
 }
-#rightcol {
-	width: 600px;
+#rightnav {
 	float: right;
 }
+#leftnav {
+	float: left;
+}
 nav {
-	font-family: "BelleroseLight", Georgia,serif;
-	font-size: 20px;
+	font-family: "BebasRegular", Arial, sans-serif;
+	font-size: 28px;
 	font-style: normal;
 	font-weight: normal;
 	height: 40px;
@@ -271,7 +287,7 @@ nav a {
 	color: #fff;
 	text-shadow: 0px 1px 0px #000;
 	text-decoration: none;
-	letter-spacing: 1px;
+	letter-spacing: -1px;
 }
 nav ul {
 	list-style: none;
@@ -281,10 +297,11 @@ nav ul li {
 	margin:0px;
 }
 #logo {
+	float: left;
 	margin: 0px;
-	width: 360px;
-	height: 120px;
-	background: url(/images/fewsel-logo.png) top center no-repeat;
+	width: 353px;
+	height: 220px;
+	background: url(/images/fewsel-logo.png) center -65px no-repeat;
 }
 #claim {
 	display: block;
@@ -297,10 +314,20 @@ nav ul li {
 	padding: 20px 0 0 0;
 	margin: 0px 0 100px 0;
 }
-footer {
+#footer {
+	width: 1000px;
+	height: 500px;
 	clear: both;
-	margin: 0;
-	padding: 0 40px 20px;
+	margin: 0px auto 300px auto;
+	padding: 0px;
+	background: url(/images/footer-bg.jpg);
+	text-align: center;
+}
+#footerlogo {
+	top: -30px;
+	width: 1000px;
+	height: 110px;
+	background: url(/images/footer-logo.png) top center no-repeat;
 }
 a {
 	color: #fff;
@@ -336,7 +363,7 @@ a:active {
 	text-align: center;
 }
 body {
-	background: url("/images/body-bg.png") top center no-repeat;
+	background: url("/images/beams.png") top center no-repeat;
 	color: white;
 	font-family: 'Museo300',serif;
 	font-size: 14px;
@@ -345,18 +372,21 @@ body {
 }
 h1 {
 	clear: both;
-	font-family: "BelleroseLight","Museo300",serif;
+	font-family: "BebasRegular", Arial, sans-serif;
 	font-size: 30px;
 	font-weight: normal;
-	letter-spacing: 2px;
+	letter-spacing: -1px;
+	color: #5a807c;
+	text-shadow: 0px -1px 0px #fff;
 }
 h2 {
-	font-family: "Museo300",serif;
+	font-family: "BebasRegular", Arial, sans-serif;
 	font-size: 20px;
 	font-style: normal;
 	font-weight: normal;
 	line-height: 1.2em;
 	margin: 0.5em 0;
+	text-shadow: 0px -1px 0px #fff;
 }
 h2 a {
 	color: #999999;
