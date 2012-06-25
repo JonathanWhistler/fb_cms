@@ -1,43 +1,42 @@
 @font-face {
     font-family: 'BelleroseLight';
-    src: url('bellerose-webfont.eot');
-    src: url('bellerose-webfont.eot?#iefix') format('embedded-opentype'),
-         url('bellerose-webfont.woff') format('woff'),
-         url('bellerose-webfont.ttf') format('truetype'),
-         url('bellerose-webfont.svg#BelleroseLight') format('svg');
+    src: url('/bellerose-webfont.eot');
+    src: url('/bellerose-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/bellerose-webfont.woff') format('woff'),
+         url('/bellerose-webfont.ttf') format('truetype'),
+         url('/bellerose-webfont.svg#BelleroseLight') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'BebasRegular';
-    src: url('BEBAS___-webfont.eot');
-    src: url('BEBAS___-webfont.eot?#iefix') format('embedded-opentype'),
-         url('BEBAS___-webfont.woff') format('woff'),
-         url('BEBAS___-webfont.ttf') format('truetype'),
-         url('BEBAS___-webfont.svg#BebasRegular') format('svg');
+    src: url('/BEBAS___-webfont.eot');
+    src: url('/BEBAS___-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/BEBAS___-webfont.woff') format('woff'),
+         url('/BEBAS___-webfont.ttf') format('truetype'),
+         url('/BEBAS___-webfont.svg#BebasRegular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'Museo500';
-    src: url('museo500-regular-webfont.eot');
-    src: url('museo500-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('museo500-regular-webfont.woff') format('woff'),
-         url('museo500-regular-webfont.ttf') format('truetype'),
-         url('museo500-regular-webfont.svg#Museo500') format('svg');
+    src: url('/museo500-regular-webfont.eot');
+    src: url('/museo500-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/museo500-regular-webfont.woff') format('woff'),
+         url('/museo500-regular-webfont.ttf') format('truetype'),
+         url('/museo500-regular-webfont.svg#Museo500') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'Museo300';
-    src: url('museo300-regular-webfont.eot');
-    src: url('museo300-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('museo300-regular-webfont.woff') format('woff'),
-         url('museo300-regular-webfont.ttf') format('truetype'),
-         url('museo300-regular-webfont.svg#Museo300') format('svg');
+    src: url('/museo300-regular-webfont.eot');
+    src: url('/museo300-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/museo300-regular-webfont.woff') format('woff'),
+         url('/museo300-regular-webfont.ttf') format('truetype'),
+         url('/museo300-regular-webfont.svg#Museo300') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
 	display: block;
@@ -238,7 +237,7 @@ html, body {
 	height: 100%;
 }
 html {
-	background: url("/images/body-bg.jpg");
+	background: url(/images/body-bg.jpg);
 	overflow: -moz-scrollbars-vertical;
 	ms-text-size-adjust: 100%;
 	overflow-y: scroll;
@@ -258,36 +257,35 @@ html {
 #header {
 	padding: 0px 0 0 0;
 	height: 140px;
-	text-align: center;
 	width: 1000px;
 	margin: 0 auto 0 auto;
 }
 #leftnav, #rightnav {
-	width: 330px;
+	width: 320px;
 	height: 120px;
+	padding: 45px 0 0 0;
 }
 #rightnav {
 	float: right;
+	text-align: right;
 }
 #leftnav {
 	float: left;
 }
 nav {
-	font-family: "BebasRegular", Arial, sans-serif;
+	font-family: 'BebasRegular', Arial, sans-serif;
 	font-size: 28px;
 	font-style: normal;
 	font-weight: normal;
 	height: 40px;
 	line-height: 1.7em;
 	margin: 0 auto;
-	text-align: center;
 	text-transform: uppercase;
 }
 nav a {
 	color: #fff;
 	text-shadow: 0px 1px 0px #000;
 	text-decoration: none;
-	letter-spacing: -1px;
 }
 nav ul {
 	list-style: none;
@@ -296,6 +294,13 @@ nav ul li {
 	display: inline;
 	margin:0px;
 }
+#rightnav nav ul li {
+	padding: 0 0 0 16px;
+}
+#leftnav nav ul li {
+	padding: 0 16px 0 0;
+}
+
 #logo {
 	float: left;
 	margin: 0px;
@@ -364,10 +369,10 @@ a:active {
 }
 body {
 	background: url("/images/beams.png") top center no-repeat;
-	color: white;
+	color: #333;
 	font-family: 'Museo300',serif;
-	font-size: 14px;
-	line-height: 19px;
+	font-size: 18px;
+	line-height: 25px;
 	margin: 0;
 }
 h1 {
@@ -377,7 +382,7 @@ h1 {
 	font-weight: normal;
 	letter-spacing: -1px;
 	color: #5a807c;
-	text-shadow: 0px -1px 0px #fff;
+	text-shadow: 0px 1px 0px #fff;
 }
 h2 {
 	font-family: "BebasRegular", Arial, sans-serif;
@@ -386,7 +391,7 @@ h2 {
 	font-weight: normal;
 	line-height: 1.2em;
 	margin: 0.5em 0;
-	text-shadow: 0px -1px 0px #fff;
+	text-shadow: 0px 1px 0px #fff;
 }
 h2 a {
 	color: #999999;
