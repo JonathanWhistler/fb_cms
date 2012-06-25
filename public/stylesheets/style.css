@@ -248,9 +248,9 @@ html {
 	height: auto !important;
 	margin: 0px auto;
 	min-height: 100%;
-	padding: 0 180px 0 180px;
+	padding: 0 80px 0 80px;
 	text-align: left;
-	width: 640px;
+	width: 840px;
 	background: #fff url(/images/content-bg.jpg);
 	border: 1px solid #fff;	
 }
@@ -316,11 +316,11 @@ nav ul li {
 }
 #content {
 	clear: both;
-	padding: 20px 0 0 0;
+	padding: 0px;
 	margin: 0px 0 100px 0;
 }
 #footer {
-	width: 1000px;
+	width: 1002px;
 	height: 500px;
 	clear: both;
 	margin: 0px auto 300px auto;
