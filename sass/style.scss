@@ -4,11 +4,12 @@ $light_grey:      #999;
 $highlight_grey:  #cacaca;
 $dark_grey:       #333;
 $white:           #f0f0f0;
-$text:			  #ffffff;
+$text:			  #3f4245;
 
-$red:             #DC6A6A;
-$green:           ##5a807c;
-$blue:            #2A8FBD;
+$red:             #a83d46;
+$green:           #5a807c;
+$lightgreen:	  #92a3a1;
+$blue:			  #dddddd;
 
 /** MUST BE FIRST **/
 @import "partials/before";
@@ -48,38 +49,11 @@ html {
 }
 
 body {
-	font-family:Bitter,serif;
 	line-height: 19px;
 	font-size: 14px;
 	color: $text;
 	background: url('/images/beams.png') top center no-repeat;
 }
-
-h1 {
-  font-family:Bitter,serif;
-  font-size:250%;
-  font-weight:normal;
-  letter-spacing:-1px;
-  line-height:1.2em;
-  margin:0.5em 0;
-  clear: both;
-}
-
-h2 {
-  font-family:Georgia,serif;
-  font-size:200%;
-  font-style: normal;
-  font-weight:normal;
-  letter-spacing:-1px;
-  line-height:1.2em;
-
-  margin:0.5em 0;
-}
-
-h2 a {
-  color: $light_grey;
-}
-
 article {
   border-bottom: 1px solid $white;
 }
@@ -565,12 +539,13 @@ article {
 }
 #images a.title {
 	display: block;
-	font-size: 15px;
-	line-height: 18px;
+	font-size: 18px;
+	line-height: 21px;
 	margin: 5px;
 	text-align: center;
-	color: $green;
-	font-family:Bitter,serif;
+	color: $text;
+	font-family: "BelleroseLight",serif;
+	font-weight: normal;
 }
 .cover {
 	background-position: center center;
