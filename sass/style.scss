@@ -7,7 +7,7 @@ $white:           #f0f0f0;
 $text:			  #ffffff;
 
 $red:             #DC6A6A;
-$green:           #24820f;
+$green:           ##5a807c;
 $blue:            #2A8FBD;
 
 /** MUST BE FIRST **/
@@ -569,8 +569,8 @@ article {
 	line-height: 18px;
 	margin: 5px;
 	text-align: center;
-	font-family: Georgia, serif;
-	font-style: italic;
+	color: $green;
+	font-family:Bitter,serif;
 }
 .cover {
 	background-position: center center;
