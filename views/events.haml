@@ -5,6 +5,8 @@
 
 %p= @meta_description
 
+%script{:type => "text/javascript", :src  => "//widget.songkick.com/widget.js"}
+%a.songkick-widget{ :href => url("http://www.songkick.com/artists/4004396"), :title => "Tourdates" } Tourdates
 %ol#events
   - events.each do |event|
     = haml(:_single_event, :layout => false, :locals => { :event => event })

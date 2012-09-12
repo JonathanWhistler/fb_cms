@@ -53,6 +53,7 @@ body {
 	font-size: 14px;
 	color: $text;
 	background: url('/images/beams.png') top center no-repeat;
+	padding: 0 0 50px 0;
 }
 article {
   border-bottom: 1px solid $white;
@@ -366,7 +367,7 @@ html {
 	float: left;
 }
 nav {
-	font-family: 'BebasRegular', Arial, sans-serif;
+	font-family: 'BelleroseLight', Arial, sans-serif;
 	font-size: 28px;
 	font-style: normal;
 	font-weight: normal;
@@ -382,6 +383,8 @@ nav a {
 }
 nav ul {
 	list-style: none;
+	padding: 0px;
+	margin: 0px;
 }
 nav ul li {
 	display: inline;
@@ -389,9 +392,11 @@ nav ul li {
 }
 #rightnav nav ul li {
 	padding: 0 0 0 16px;
+	float: right;
 }
 #leftnav nav ul li {
 	padding: 0 16px 0 0;
+	float: left;
 }
 
 #logo {
@@ -414,15 +419,17 @@ nav ul li {
 }
 #footer {
 	width: 1002px;
-	height: 500px;
+	height: 260px;
 	clear: both;
 	margin: 0px auto 300px auto;
 	padding: 0px;
 	background: url(/images/footer-bg.jpg);
 	text-align: center;
+	position: relative;
 }
 #footerlogo {
-	top: -30px;
+	position: absolute;
+	top: -50px;
 	width: 1000px;
 	height: 110px;
 	background: url(/images/footer-logo.png) top center no-repeat;

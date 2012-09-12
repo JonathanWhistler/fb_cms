@@ -167,7 +167,7 @@ a:active { color: #333333; }
 
 html { background: url("/images/html-bg.png") top center; }
 
-body { line-height: 19px; font-size: 14px; color: #3f4245; background: url("/images/beams.png") top center no-repeat; }
+body { line-height: 19px; font-size: 14px; color: #3f4245; background: url("/images/beams.png") top center no-repeat; padding: 0 0 50px 0; }
 
 article { border-bottom: 1px solid #f0f0f0; }
 
@@ -506,17 +506,17 @@ html { background: url(/images/body-bg.jpg); overflow: -moz-scrollbars-vertical;
 
 #leftnav { float: left; }
 
-nav { font-family: 'BebasRegular', Arial, sans-serif; font-size: 28px; font-style: normal; font-weight: normal; height: 40px; line-height: 1.7em; margin: 0 auto; text-transform: uppercase; }
+nav { font-family: 'BelleroseLight', Arial, sans-serif; font-size: 28px; font-style: normal; font-weight: normal; height: 40px; line-height: 1.7em; margin: 0 auto; text-transform: uppercase; }
 
 nav a { color: #fff; text-shadow: 0px 1px 0px #000; text-decoration: none; }
 
-nav ul { list-style: none; }
+nav ul { list-style: none; padding: 0px; margin: 0px; }
 
 nav ul li { display: inline; margin: 0px; }
 
-#rightnav nav ul li { padding: 0 0 0 16px; }
+#rightnav nav ul li { padding: 0 0 0 16px; float: right; }
 
-#leftnav nav ul li { padding: 0 16px 0 0; }
+#leftnav nav ul li { padding: 0 16px 0 0; float: left; }
 
 #logo { float: left; margin: 0px; width: 353px; height: 220px; background: url(/images/fewsel-logo.png) center -65px no-repeat; }
 
@@ -524,9 +524,9 @@ nav ul li { display: inline; margin: 0px; }
 
 #content { clear: both; padding: 0px; margin: 0px 0 100px 0; }
 
-#footer { width: 1002px; height: 500px; clear: both; margin: 0px auto 300px auto; padding: 0px; background: url(/images/footer-bg.jpg); text-align: center; }
+#footer { width: 1002px; height: 260px; clear: both; margin: 0px auto 300px auto; padding: 0px; background: url(/images/footer-bg.jpg); text-align: center; position: relative; }
 
-#footerlogo { top: -30px; width: 1000px; height: 110px; background: url(/images/footer-logo.png) top center no-repeat; }
+#footerlogo { position: absolute; top: -50px; width: 1000px; height: 110px; background: url(/images/footer-logo.png) top center no-repeat; }
 
 a { color: #fff; outline: none; }
 
