@@ -11,9 +11,19 @@ describe "fb_cms app" do
     get '/'
     last_response.should be_ok
   end
-
+  
+  it "responds to /music" do
+    get '/music'
+    last_response.should be_ok
+  end
+  
   it "responds to /about" do
     get '/about'
+    last_response.should be_ok
+  end
+  
+  it "responds to /videos" do
+    get '/videos'
     last_response.should be_ok
   end
 

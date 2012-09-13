@@ -36,18 +36,21 @@ get '/' do
   haml :index, :locals => { :posts => posts }
 end
 
+get '/music' do
+  haml :music
+end
+
+get '/videos' do
+  haml :videos
+end
+
 get '/about' do
   page = Facebook::Page.load
   haml :about, :locals => { :page => page }
 end
 
-get '/albums' do
-  albums = Facebook::Album.all
-  haml :albums, :locals => { :albums => albums }
-end
-
-get '/albums/:id/:name' do
-  album = Facebook::Album.find(params[:id])
+get '/photos' do
+  album = Facebook::Album.find("475642325801599")
   haml :album, :locals => { :album => album }
 end
 
