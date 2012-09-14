@@ -54,7 +54,7 @@ get '/photos' do
   haml :album, :locals => { :album => album }
 end
 
-get '/events' do
+get '/tour' do
   events = Facebook::Event.all
   haml :events, :locals => { :events => events }
 end
