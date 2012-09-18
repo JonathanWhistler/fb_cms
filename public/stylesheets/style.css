@@ -532,6 +532,8 @@ nav ul li, #footernav ul li { display: inline; margin: 0px; }
 
 #footerlinks a, #footerlinks a:visited, #footerlinks a:hover, #footerlinks a:active { color: #5a807c; }
 
+#footerlinks a:hover { background: none; }
+
 a.footer { padding: 0 5px 0 5px; }
 
 #logo { float: left; margin: 0px; width: 353px; height: 220px; background: url(/images/fewsel-logo.png) center -65px no-repeat; }

@@ -445,6 +445,9 @@ nav ul li,#footernav ul li {
 #footerlinks a, #footerlinks a:visited, #footerlinks a:hover, #footerlinks a:active {
 	color: $green;
 }
+#footerlinks a:hover {
+	background: none;
+}
 a.footer {
 	padding: 0 5px 0 5px;
 }
