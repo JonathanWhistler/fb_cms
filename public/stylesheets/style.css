@@ -171,8 +171,6 @@ body { line-height: 19px; font-size: 14px; color: #3f4245; background: url("/ima
 
 article { border-bottom: 1px solid #f0f0f0; }
 
-.published_at { font-family: Georgia,serif; font-size: 150%; font-style: normal; font-weight: normal; letter-spacing: -1px; line-height: 1.2em; margin: 0.5em 0; }
-
 .like_box { background: #f0f0f0; -moz-border-radius: 10px; -webkit-border-radius: 10px; -o-border-radius: 10px; -ms-border-radius: 10px; -khtml-border-radius: 10px; border-radius: 10px; padding: 10px; margin: 10px; }
 
 .facebook { background: url("/images/facebook.png") center left no-repeat; height: 20px; min-height: 20px; height: auto !important; padding: 0 0 0 20px; line-height: 20px; }
@@ -554,17 +552,17 @@ a.footer { padding: 0 5px 0 5px; }
 
 .centered { text-align: center; }
 
-body { background: url("/images/beams.png") top center no-repeat; color: #333; /*font-family: 'Museo300',serif;*/ font-family: arial, sans-serif; font-size: 18px; line-height: 25px; margin: 0; }
+body { background: url("/images/beams.png") top center no-repeat; color: #3f4245; font-family: 'Museo300',serif; font-size: 18px; line-height: 25px; margin: 0; }
 
-h1 { clear: both; font-family: "BebasRegular", Arial, sans-serif; font-size: 30px; font-weight: normal; letter-spacing: -1px; color: #5a807c; text-shadow: 0px 1px 0px #fff; }
+p { clear: both; margin: 0px; padding: 0 0 20px 0; }
+
+h1 { clear: both; font-family: "BebasRegular", Arial, sans-serif; font-size: 30px; font-weight: normal; letter-spacing: -1px; color: #3f4245; text-shadow: 0px 1px 0px #fff; margin: 0px; padding: 0 0 30px 0; }
 
 h2 { font-family: "BebasRegular", Arial, sans-serif; font-size: 20px; font-style: normal; font-weight: normal; line-height: 1.2em; margin: 0.5em 0; text-shadow: 0px 1px 0px #fff; }
 
 h2 a { color: #999999; }
 
 article { border-bottom: 1px solid #f0f0f0; }
-
-.published_at { font-family: "BelleroseLight",serif; font-size: 13px; font-style: normal; font-weight: normal; letter-spacing: 2px; }
 
 .like_box { border-radius: 10px; khtml-border-radius: 10px; margin: 10px; moz-border-radius: 10px; ms-border-radius: 10px; o-border-radius: 10px; padding: 10px; webkit-border-radius: 10px; }
 
@@ -767,14 +765,22 @@ time { margin: 0 0 10px; }
   p, h2, h3 { orphans: 3; widows: 3; }
   h2, h3 { page-break-after: avoid; } }
 /* ################ homepage ######################## */
-#news { clear: both; width: 600px; margin: 0 0 40px 0; }
+#news { clear: both; width: 420px; margin: 0 0 40px 0px; }
 
-#newsdate { display: block; width: 200px; float: left; }
+#newsdate { font-family: "BebasRegular", sans-serif; font-size: 18px; color: #fff; display: block; overflow: hidden; width: 60px; height: 60px; background-color: #5a807c; float: left; -khtml-border-radius: 30px; -moz-border-radius: 30px; -ms-border-radius: 30px; border-radius: 30px; -webkit-border-radius: 30px; margin: 0 20px 20px 0; box-shadow: 0px 1px 0px #fff; -moz-box-shadow: 0px 2px 0px #fff; -webkit-box-shadow: 0px 2px 0px #fff; }
 
-#newscontent { display: block; width: 400px; float: right; }
+#newscontent { display: block; width: 340px; float: right; }
+
+p.news { font-size: 16px; line-height: 21px; }
 
 /* ################ music ######################## */
 /* ################ band ######################## */
+h1.band { float: left; display: block; color: #a83d46; font-size: 65px; letter-spacing: -2px; margin: 20px 0 0 0; }
+
+#bandheadline { display: block; float: left; font-family: "BebasRegular", sans-serif; font-size: 31px; color: #3f4245; width: 180px; line-height: 30px; padding: 0 0 0 10px; }
+
+#band { padding: 20px 0 0 70px; }
+
 /* ################ tour ######################## */
 /* ################ media ######################## */
 /* ################ contact ######################## */

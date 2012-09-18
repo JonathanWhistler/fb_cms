@@ -58,17 +58,6 @@ body {
 article {
   border-bottom: 1px solid $white;
 }
-
-.published_at {
-  font-family:Georgia,serif;
-  font-size:150%;
-  font-style: normal;
-  font-weight:normal;
-  letter-spacing:-1px;
-  line-height:1.2em;
-  margin:0.5em 0;  
-}
-
 .like_box {
   background: $white;
   @include border-radius(10px);
@@ -510,21 +499,28 @@ a.footer {
 }
 body {
 	background: url("/images/beams.png") top center no-repeat;
-	color: #333;
-	/*font-family: 'Museo300',serif;*/
-	font-family: arial, sans-serif;
+	color: $text;
+	font-family: 'Museo300',serif;
 	font-size: 18px;
 	line-height: 25px;
 	margin: 0;
 }
+p {
+	clear: both;
+	margin: 0px;
+	padding: 0 0 20px 0;
+}
+
 h1 {
 	clear: both;
 	font-family: "BebasRegular", Arial, sans-serif;
 	font-size: 30px;
 	font-weight: normal;
 	letter-spacing: -1px;
-	color: #5a807c;
+	color: $text;
 	text-shadow: 0px 1px 0px #fff;
+	margin: 0px;
+	padding: 0 0 30px 0;
 }
 h2 {
 	font-family: "BebasRegular", Arial, sans-serif;
@@ -540,13 +536,6 @@ h2 a {
 }
 article {
 	border-bottom: 1px solid #f0f0f0;
-}
-.published_at {
-	font-family: "BelleroseLight",serif;
-	font-size: 13px;
-	font-style: normal;
-	font-weight: normal;
-	letter-spacing: 2px;
 }
 .like_box {
 	border-radius: 10px;
@@ -1146,18 +1135,37 @@ time {
 /* ################ homepage ######################## */
 #news {
 	clear: both;
-	width: 600px;
-	margin: 0 0 40px 0;
+	width: 420px;
+	margin: 0 0 40px 0px;
 }
 #newsdate {
+	font-family: "BebasRegular", sans-serif;
+	font-size: 18px;
+	color: #fff;
 	display: block;
-	width: 200px;
+	overflow: hidden;
+	width: 60px;
+	height: 60px;
+	background-color: $green;
 	float: left;
+	-khtml-border-radius: 30px;
+	-moz-border-radius: 30px;
+	-ms-border-radius: 30px;
+	border-radius: 30px;
+	-webkit-border-radius: 30px;
+	margin: 0 20px 20px 0;
+	box-shadow: 0px 1px 0px #fff;
+	-moz-box-shadow: 0px 2px 0px #fff;
+	-webkit-box-shadow: 0px 2px 0px #fff;
 }
 #newscontent {
 	display: block;
-	width: 400px;
+	width: 340px;
 	float: right;
+}
+p.news {
+	font-size: 16px;
+	line-height: 21px;
 }
 
 
@@ -1165,6 +1173,27 @@ time {
 
 
 /* ################ band ######################## */
+h1.band {
+	float: left;
+	display: block;
+	color: $red;
+	font-size: 65px;
+	letter-spacing: -2px;
+	margin: 20px 0 0 0;
+}
+#bandheadline {
+	display: block;
+	float: left;
+	font-family: "BebasRegular", sans-serif;
+	font-size: 31px;
+	color: $text;
+	width: 180px;
+	line-height: 30px;
+	padding: 0 0 0 10px;
+}
+#band {
+	padding: 20px 0 0 70px;
+}
 
 
 /* ################ tour ######################## */

@@ -1,12 +1,14 @@
-- @meta_title = "fewsel news"
+- @meta_title = "fewsel status updates"
 - @meta_description = "...powered by Facebook Graph API."
 
-%h1= @meta_title
+#stage
+  %img{:src => "/images/fewsel.jpg"}
 
+%h1= @meta_title
 - posts.each do |post|
   #news
     #newsdate  
       %p.published_at
         %time{ :pubdate => "pubdate", :datetime => post.upated_at.iso8601 }= post.date
     #newscontent
-      %p= nl2br(linkify post.message)
+      %p.news= nl2br(linkify post.message)

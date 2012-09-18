@@ -1,12 +1,17 @@
-- @meta_title =  "Why are we..."
+- @meta_title =  "fewsel"
 - @meta_description =  page.mission
+- @subheadline = "was founded in april 2007"
 
-%h1= @meta_title
+%h1.band= @meta_title
+#bandheadline= @subheadline
 
 %h2.centered= nl2br(page.mission)
 
 = simple_format(page.description, :class => "description")
 
 = simple_format(page.bio, :class => "bio")
+
+#band
+  %img{:src => "/images/band.png"}
 
 
