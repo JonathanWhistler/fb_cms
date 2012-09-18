@@ -50,9 +50,9 @@
         %nav
           %ul
             %li
-              %a{:href => url("/videos") } Videos
+              %a{:href => url("/contact") } Contact
             %li
-              %a{:href => url("/photos") } Photos
+              %a{:href => url("/media") } Media
             %li
               %a{:href => url("/tour") } Tour
     #container
@@ -61,6 +61,26 @@
         .clear
     #footer
       #footerlogo
+      #footernav
+        %ul.footernav
+          %li
+            %a{:href => url("/") } Home
+          %li
+            %a{:href => url("/music") } Music
+          %li
+            %a{:href => url("/about") } Band
+          %li
+            %a{:href => url("/contact") } Contact
+          %li
+            %a{:href => url("/media") } Media
+          %li.last
+            %a{:href => url("/tour") } Tour
+      #footerlinks
+        %a.footer{:href => url("http://www.facebook.com/fewselmusic") } Facebook
+        %a.footer{:href => url("http://www.twitter.com/fewsel") } Twitter   
+        %a.footer{:href => url("http://soundcloud.com/fewselmusic") } Soundcloud
+        %a.footer{:href => url("http://fewselmusic.bigcartel.com") } Shop
+      #street
       
 
     %script{ :src => '//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js' }

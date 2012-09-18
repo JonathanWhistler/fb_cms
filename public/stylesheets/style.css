@@ -137,13 +137,13 @@ html { background: #fff; overflow: -moz-scrollbars-vertical; }
 
 body { font-family: Helvetica, "Helvetica Neue", Arial, sans-serif; text-align: center; margin: 0; }
 
-#container { width: 720px; height: 100%; min-height: 100%; height: auto !important; color: #1a171b; margin: 0px auto; padding: 0; text-align: left; }
+#container { width: 720px; height: 100%; min-height: 100%; height: auto !important; color: #1d2429; margin: 0px auto; padding: 0; text-align: left; }
 
 header { padding: 20px 0 0 0; text-align: center; }
 
 nav { font-family: Georgia,serif; font-size: 100%; font-style: normal; font-weight: normal; text-transform: uppercase; letter-spacing: 1px; line-height: 1.7em; height: 50px; text-align: center; display: table; /* Allow the centering to work */ margin: 0 auto; }
 
-nav a { color: #1a171b; }
+nav a { color: #1d2429; }
 
 nav ul { list-style: none; }
 
@@ -408,11 +408,11 @@ button, input, select, textarea { color: #222; font-family: sans-serif; }
 
 ::selection { background: #2a8fbd; color: #fff; text-shadow: none; }
 
-a { color: #00e; text-decoration: none; }
+a { color: #a83d46; text-decoration: none; }
 
-a:visited { color: #551a8b; }
+a:visited { color: #a83d46; }
 
-a:hover { color: #06e; }
+a:hover { color: #a83d46; background-color: #cacaca; }
 
 a:focus { outline: thin dotted; }
 
@@ -506,17 +506,33 @@ html { background: url(/images/body-bg.jpg); overflow: -moz-scrollbars-vertical;
 
 #leftnav { float: left; }
 
-nav { font-family: 'BelleroseLight', Arial, sans-serif; font-size: 28px; font-style: normal; font-weight: normal; height: 40px; line-height: 1.7em; margin: 0 auto; text-transform: uppercase; }
+/* ################### main nav ################### */
+nav { font-family: 'BebasRegular', Arial, sans-serif; font-size: 28px; font-style: normal; font-weight: normal; height: 40px; line-height: 1.7em; margin: 0 auto; text-transform: uppercase; letter-spacing: 1px; }
 
-nav a { color: #fff; text-shadow: 0px 1px 0px #000; text-decoration: none; }
+nav a, nav a:visited, nav a:hover, nav a:active, #footernav a, #footernav a:visited, #footernav a:hover, #footernav a:active { color: #fff; text-shadow: 0px -1px 0px black; text-decoration: none; background: none; }
 
-nav ul { list-style: none; padding: 0px; margin: 0px; }
+nav a:hover, #footernav a:hover { text-decoration: underline; background: none; }
 
-nav ul li { display: inline; margin: 0px; }
+nav ul, #footernav ul { list-style: none; padding: 0px; margin: 0px; }
+
+nav ul li, #footernav ul li { display: inline; margin: 0px; }
 
 #rightnav nav ul li { padding: 0 0 0 16px; float: right; }
 
 #leftnav nav ul li { padding: 0 16px 0 0; float: left; }
+
+/* ################### footer nav ################### */
+#footernav { width: 600px; padding: 80px 0 0 0; margin: 0 auto; font-family: 'BebasRegular', Arial, sans-serif; font-size: 28px; font-style: normal; font-weight: normal; line-height: 1.7em; margin: 0 auto; text-transform: uppercase; letter-spacing: 1px; }
+
+#footernav ul li { padding: 0 20px 0px 0; border-bottom: 4px solid #fff; }
+
+#footernav ul li.last { padding-right: 0px; }
+
+#footerlinks { width: 600px; padding: 6px 0 0 0; margin: 0 auto; font-family: 'BebasRegular', Arial, sans-serif; font-size: 20px; font-style: normal; font-weight: normal; line-height: 1.7em; margin: 0 auto; text-transform: uppercase; }
+
+#footerlinks a, #footerlinks a:visited, #footerlinks a:hover, #footerlinks a:active { color: #5a807c; }
+
+a.footer { padding: 0 5px 0 5px; }
 
 #logo { float: left; margin: 0px; width: 353px; height: 220px; background: url(/images/fewsel-logo.png) center -65px no-repeat; }
 
@@ -528,15 +544,7 @@ nav ul li { display: inline; margin: 0px; }
 
 #footerlogo { position: absolute; top: -50px; width: 1000px; height: 110px; background: url(/images/footer-logo.png) top center no-repeat; }
 
-a { color: #fff; outline: none; }
-
-a:visited { color: #fff; }
-
-a:focus { color: #fff; text-decoration: underline; }
-
-a:hover { color: #fff; text-decoration: underline; }
-
-a:active { color: #fff; }
+#street { display: block; width: 1100px; height: 400px; margin: 0 auto; background: url(/images/street.jpg) top center no-repeat; }
 
 .clear { clear: both; }
 
@@ -544,7 +552,7 @@ a:active { color: #fff; }
 
 .centered { text-align: center; }
 
-body { background: url("/images/beams.png") top center no-repeat; color: #333; font-family: 'Museo300',serif; font-size: 18px; line-height: 25px; margin: 0; }
+body { background: url("/images/beams.png") top center no-repeat; color: #333; /*font-family: 'Museo300',serif;*/ font-family: arial, sans-serif; font-size: 18px; line-height: 25px; margin: 0; }
 
 h1 { clear: both; font-family: "BebasRegular", Arial, sans-serif; font-size: 30px; font-weight: normal; letter-spacing: -1px; color: #5a807c; text-shadow: 0px 1px 0px #fff; }
 
@@ -756,9 +764,15 @@ time { margin: 0 0 10px; }
   @page { margin: 0.5cm; }
   p, h2, h3 { orphans: 3; widows: 3; }
   h2, h3 { page-break-after: avoid; } }
-/* ################ news article */
+/* ################ homepage ######################## */
 #news { clear: both; width: 600px; margin: 0 0 40px 0; }
 
 #newsdate { display: block; width: 200px; float: left; }
 
 #newscontent { display: block; width: 400px; float: right; }
+
+/* ################ music ######################## */
+/* ################ band ######################## */
+/* ################ tour ######################## */
+/* ################ media ######################## */
+/* ################ contact ######################## */

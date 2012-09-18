@@ -40,8 +40,8 @@ get '/music' do
   haml :music
 end
 
-get '/videos' do
-  haml :videos
+get '/contact' do
+  haml :contact
 end
 
 get '/about' do
@@ -49,7 +49,7 @@ get '/about' do
   haml :about, :locals => { :page => page }
 end
 
-get '/photos' do
+get '/media' do
   album = Facebook::Album.find("475642325801599")
   haml :album, :locals => { :album => album }
 end

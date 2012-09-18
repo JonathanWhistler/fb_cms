@@ -1,5 +1,5 @@
 $background:      #eaeaea;
-$black:           #1a171b;
+$black:           #1d2429;
 $light_grey:      #999;
 $highlight_grey:  #cacaca;
 $dark_grey:       #333;
@@ -161,14 +161,15 @@ button, input, select, textarea {
 	text-shadow: none;
 }
 a {
-	color: #00e;
+	color: $red;
 	text-decoration: none;
 }
 a:visited {
-	color: #551a8b;
+	color: $red;
 }
 a:hover {
-	color: #06e;
+	color: $red;
+	background-color: $highlight_grey;
 }
 a:focus {
 	outline: thin dotted;
@@ -366,8 +367,9 @@ html {
 #leftnav {
 	float: left;
 }
+/* ################### main nav ################### */
 nav {
-	font-family: 'BelleroseLight', Arial, sans-serif;
+	font-family: 'BebasRegular', Arial, sans-serif;
 	font-size: 28px;
 	font-style: normal;
 	font-weight: normal;
@@ -375,18 +377,24 @@ nav {
 	line-height: 1.7em;
 	margin: 0 auto;
 	text-transform: uppercase;
+	letter-spacing: 1px;
 }
-nav a {
+nav a, nav a:visited, nav a:hover, nav a:active, #footernav a,#footernav a:visited, #footernav a:hover, #footernav a:active {
 	color: #fff;
-	text-shadow: 0px 1px 0px #000;
+	text-shadow: 0px -1px 0px #000;
 	text-decoration: none;
+	background: none;
 }
-nav ul {
+nav a:hover, #footernav a:hover {
+	text-decoration: underline;
+	background: none;
+}
+nav ul, #footernav ul {
 	list-style: none;
 	padding: 0px;
 	margin: 0px;
 }
-nav ul li {
+nav ul li,#footernav ul li {
 	display: inline;
 	margin:0px;
 }
@@ -397,6 +405,48 @@ nav ul li {
 #leftnav nav ul li {
 	padding: 0 16px 0 0;
 	float: left;
+}
+/* ################### footer nav ################### */
+#footernav {
+	width: 600px;
+	padding: 80px 0 0 0;
+	margin: 0 auto;
+	font-family: 'BebasRegular', Arial, sans-serif;
+	font-size: 28px;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1.7em;
+	margin: 0 auto;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	}
+#footernav ul {	
+		
+	}
+#footernav ul li {
+	padding: 0 20px 0px 0;
+	border-bottom: 4px solid #fff;
+}
+#footernav ul li.last {
+	padding-right: 0px;
+}
+#footerlinks {
+	width: 600px;
+	padding: 6px 0 0 0;
+	margin: 0 auto;
+	font-family: 'BebasRegular', Arial, sans-serif;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1.7em;
+	margin: 0 auto;
+	text-transform: uppercase;
+}
+#footerlinks a, #footerlinks a:visited, #footerlinks a:hover, #footerlinks a:active {
+	color: $green;
+}
+a.footer {
+	padding: 0 5px 0 5px;
 }
 
 #logo {
@@ -434,24 +484,12 @@ nav ul li {
 	height: 110px;
 	background: url(/images/footer-logo.png) top center no-repeat;
 }
-a {
-	color: #fff;
-	outline: none;
-
-}
-a:visited {
-	color: #fff;
-}
-a:focus {
-	color: #fff;
-	text-decoration: underline;
-}
-a:hover {
-	color: #fff;
-	text-decoration: underline;
-}
-a:active {
-	color: #fff;
+#street {
+	display: block;
+	width: 1100px;
+	height: 400px;
+	margin: 0 auto;
+	background: url(/images/street.jpg) top center no-repeat;	
 }
 .clear {
 	clear: both;
@@ -470,7 +508,8 @@ a:active {
 body {
 	background: url("/images/beams.png") top center no-repeat;
 	color: #333;
-	font-family: 'Museo300',serif;
+	/*font-family: 'Museo300',serif;*/
+	font-family: arial, sans-serif;
 	font-size: 18px;
 	line-height: 25px;
 	margin: 0;
@@ -1101,7 +1140,7 @@ time {
 	}
 }
 
-/* ################ news article */
+/* ################ homepage ######################## */
 #news {
 	clear: both;
 	width: 600px;
@@ -1117,3 +1156,18 @@ time {
 	width: 400px;
 	float: right;
 }
+
+
+/* ################ music ######################## */
+
+
+/* ################ band ######################## */
+
+
+/* ################ tour ######################## */
+
+
+/* ################ media ######################## */
+
+
+/* ################ contact ######################## */
