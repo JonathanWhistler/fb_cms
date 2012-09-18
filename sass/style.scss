@@ -1133,6 +1133,10 @@ time {
 }
 
 /* ################ homepage ######################## */
+#stage {
+	padding: 0 0 35px 0;
+}
+
 #news {
 	clear: both;
 	width: 420px;
@@ -1164,8 +1168,8 @@ time {
 	float: right;
 }
 p.news {
-	font-size: 16px;
-	line-height: 21px;
+	font-size: 18px;
+	line-height: 25px;
 }
 
 
