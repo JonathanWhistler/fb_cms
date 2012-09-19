@@ -4,11 +4,13 @@
 #stage
   %img{:src => "/images/fewsel.jpg"}
 
-%h1= @meta_title
-- posts.each do |post|
-  #news
-    #newsdate  
-      %p.published_at
-        %time{ :pubdate => "pubdate", :datetime => post.upated_at.iso8601 }= post.date
-    #newscontent
-      %p.news= nl2br(linkify post.message)
+#leftcol
+  %h1= @meta_title
+  - posts.each do |post|
+    #news
+      #newsdate  
+        %p.published_at
+          %time{ :pubdate => "pubdate", :datetime => post.upated_at.iso8601 }= post.date
+      #newscontent
+        %p.news= nl2br(linkify post.message)
+#rightcol

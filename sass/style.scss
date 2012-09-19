@@ -5,6 +5,7 @@ $highlight_grey:  #cacaca;
 $dark_grey:       #333;
 $white:           #f0f0f0;
 $text:			  #3f4245;
+$navhover:		  #5a807c;
 
 $red:             #a83d46;
 $green:           #5a807c;
@@ -375,8 +376,9 @@ nav a, nav a:visited, nav a:hover, nav a:active, #footernav a,#footernav a:visit
 	background: none;
 }
 nav a:hover, #footernav a:hover {
-	text-decoration: underline;
+	text-decoration: none;
 	background: none;
+	text-shadow: 0px 6px 6px $navhover;
 }
 nav ul, #footernav ul {
 	list-style: none;
@@ -566,14 +568,16 @@ article {
 	width: 190px;
 }
 #images a.img_wrap {
-	background: #f0f0f0;
-	border: 1px solid #999999;
+	background: #fff;
+	border: 5px solid #fff;
 	display: block;
-	padding: 4px;
+	padding: 0px;
 	width: 180px;
 }
 #images a.img_wrap:hover {
-	border: 1px solid #cacaca;
+	border: 5px solid #fff;
+	display: block;
+	padding: 0px;
 }
 #images a.title {
 	display: block;
@@ -1136,7 +1140,16 @@ time {
 #stage {
 	padding: 0 0 35px 0;
 }
-
+#leftcol {
+	float: left;
+	width: 420px;
+	padding: 30px 0 0 0;
+}
+#rightcol {
+	float:right;
+	width: 420px;
+	padding: 30px 0 0 0;
+}
 #news {
 	clear: both;
 	width: 420px;
@@ -1168,8 +1181,8 @@ time {
 	float: right;
 }
 p.news {
-	font-size: 18px;
-	line-height: 25px;
+	font-size: 16px;
+	line-height: 23px;
 }
 
 

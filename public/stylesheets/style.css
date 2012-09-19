@@ -509,7 +509,7 @@ nav { font-family: 'BebasRegular', Arial, sans-serif; font-size: 28px; font-styl
 
 nav a, nav a:visited, nav a:hover, nav a:active, #footernav a, #footernav a:visited, #footernav a:hover, #footernav a:active { color: #fff; text-shadow: 0px -1px 0px black; text-decoration: none; background: none; }
 
-nav a:hover, #footernav a:hover { text-decoration: underline; background: none; }
+nav a:hover, #footernav a:hover { text-decoration: none; background: none; text-shadow: 0px 6px 6px #5a807c; }
 
 nav ul, #footernav ul { list-style: none; padding: 0px; margin: 0px; }
 
@@ -572,9 +572,9 @@ article { border-bottom: 1px solid #f0f0f0; }
 
 #images li { float: left; margin: 30px; width: 190px; }
 
-#images a.img_wrap { background: #f0f0f0; border: 1px solid #999999; display: block; padding: 4px; width: 180px; }
+#images a.img_wrap { background: #fff; border: 5px solid #fff; display: block; padding: 0px; width: 180px; }
 
-#images a.img_wrap:hover { border: 1px solid #cacaca; }
+#images a.img_wrap:hover { border: 5px solid #fff; display: block; padding: 0px; }
 
 #images a.title { display: block; font-size: 18px; line-height: 21px; margin: 5px; text-align: center; color: #3f4245; font-family: "BelleroseLight",serif; font-weight: normal; }
 
@@ -767,13 +767,17 @@ time { margin: 0 0 10px; }
 /* ################ homepage ######################## */
 #stage { padding: 0 0 35px 0; }
 
+#leftcol { float: left; width: 420px; padding: 30px 0 0 0; }
+
+#rightcol { float: right; width: 420px; padding: 30px 0 0 0; }
+
 #news { clear: both; width: 420px; margin: 0 0 40px 0px; }
 
 #newsdate { font-family: "BebasRegular", sans-serif; font-size: 18px; color: #fff; display: block; overflow: hidden; width: 60px; height: 60px; background-color: #5a807c; float: left; -khtml-border-radius: 30px; -moz-border-radius: 30px; -ms-border-radius: 30px; border-radius: 30px; -webkit-border-radius: 30px; margin: 0 20px 20px 0; box-shadow: 0px 1px 0px #fff; -moz-box-shadow: 0px 2px 0px #fff; -webkit-box-shadow: 0px 2px 0px #fff; }
 
 #newscontent { display: block; width: 340px; float: right; }
 
-p.news { font-size: 18px; line-height: 25px; }
+p.news { font-size: 16px; line-height: 23px; }
 
 /* ################ music ######################## */
 /* ################ band ######################## */
