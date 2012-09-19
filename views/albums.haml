@@ -1,7 +1,7 @@
 - @meta_title = "fewsel in color"
 - @meta_description = "Albums of your facebook Page."
 
-%h1= @meta_title
+%h1.band= @meta_title
 
 %ul#images{ :data => { :collection => "albums" } }
   - albums.each do |album|

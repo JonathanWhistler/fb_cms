@@ -1,15 +1,17 @@
-- @meta_title =  "fewsel"
+- @meta_title =  "the band"
 - @meta_description =  page.mission
-- @subheadline = "was founded in april 2007"
+- @subheadline = "this is fewsel"
 
 %h1.band= @meta_title
 #bandheadline= @subheadline
+
+#band
+  %img{:src => "/images/band.png"}
 
 %h2.centered= nl2br(page.mission)
 
 = simple_format(page.bio, :class => "bio")
 
-#band
-  %img{:src => "/images/band.png"}
+
 
 

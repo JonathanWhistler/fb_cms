@@ -7,11 +7,15 @@
 
 #album1
   #artwork
-    %img{:src => "/images/fewsel-wrong-side-of-the-universe.jpg"}
+    %a{:alt => "listen to fewsel on soundcloud", :href => "http://fewselmusic.bigcartel.com"}
+      %img{:alt => "fewsel wrong side of the universe", :src => "/images/fewsel-wrong-side-of-the-universe.jpg"}/
   #soundcloud
+    #soundcloud_item
+      %iframe{:frameborder => "no", :height => "166", :scrolling => "no", :src => "http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F15781853&auto_play=false&show_artwork=true&color=5a807c", :width => "100%"}
     #soundcloud_item
       %iframe{:frameborder => "no", :height => "166", :scrolling => "no", :src => "http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F31492001&auto_play=false&show_artwork=false&color=5a807c", :width => "100%"}
     #soundcloud_item
       %iframe{:frameborder => "no", :height => "166", :scrolling => "no", :src => "http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F22168010&auto_play=false&show_artwork=true&color=5a807c", :width => "100%"}
-    #soundcloud_item
-      %iframe{:frameborder => "no", :height => "166", :scrolling => "no", :src => "http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F26204937&auto_play=false&show_artwork=true&color=5a807c", :width => "100%"}
+  #soundcloud_link
+    %a{:alt => "listen to fewsel on soundcloud", :href => "http://soundcloud.com/fewselmusic"}
+      %img{:alt => "soundcloud", :src => "/images/soundcloud-link.jpg"}/   
