@@ -10,7 +10,7 @@
     #news
       #newsdate  
         %p.published_at
-          %time{ :pubdate => "pubdate", :datetime => post.upated_at.iso8601 }= post.date
+          %time{ :pubdate => "pubdate", :datetime => post.upated_at.iso8601 }= I18n.l(post.upated_at, :format => :short)
       #newscontent
         %p.news= nl2br(linkify post.message)
 #rightcol
