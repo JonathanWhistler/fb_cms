@@ -1157,8 +1157,10 @@ time {
 }
 #newsdate {
 	font-family: "BebasRegular", sans-serif;
-	font-size: 18px;
+	font-size: 10px;
 	color: #fff;
+	text-align: center;
+	line-height: 16px;
 	display: block;
 	overflow: hidden;
 	width: 60px;
@@ -1188,6 +1190,31 @@ p.news {
 
 /* ################ music ######################## */
 
+#musicheadline {
+	display: block;
+	float: left;
+	font-family: "BebasRegular", sans-serif;
+	font-size: 31px;
+	color: $text;
+	width: 420px;
+	line-height: 30px;
+	padding: 0 0 0 10px;
+}
+#album1 {
+}
+#artwork {
+	float: left;
+	width: 540px;
+	background: #fff;
+}
+#soundcloud {
+	width: 300px;
+	float: right;
+}
+#soundcloud_item {
+	width: 300px;
+	float: right;
+}
 
 /* ################ band ######################## */
 h1.band {

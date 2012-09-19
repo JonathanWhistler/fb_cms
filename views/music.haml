@@ -1,6 +1,17 @@
-- @meta_title = "Music"
-- @meta_description = "Listen to our music."
+- @meta_title = "fewsel music"
+- @meta_description = "listen to the rock music of fewsel"
+- @subheadline = "massive rock music from the wrong side of the universe"
 
-%h1= @meta_title
+%h1.band= @meta_title
+#musicheadline= @subheadline
 
-%p= @meta_description
+#album1
+  #artwork
+    %img{:src => "/images/fewsel-wrong-side-of-the-universe.jpg"}
+  #soundcloud
+    #soundcloud_item
+      %iframe{:frameborder => "no", :height => "166", :scrolling => "no", :src => "http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F31492001&auto_play=false&show_artwork=false&color=5a807c", :width => "100%"}
+    #soundcloud_item
+      %iframe{:frameborder => "no", :height => "166", :scrolling => "no", :src => "http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F22168010&auto_play=false&show_artwork=true&color=5a807c", :width => "100%"}
+    #soundcloud_item
+      %iframe{:frameborder => "no", :height => "166", :scrolling => "no", :src => "http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F26204937&auto_play=false&show_artwork=true&color=5a807c", :width => "100%"}

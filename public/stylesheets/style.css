@@ -773,13 +773,21 @@ time { margin: 0 0 10px; }
 
 #news { clear: both; width: 420px; margin: 0 0 40px 0px; }
 
-#newsdate { font-family: "BebasRegular", sans-serif; font-size: 18px; color: #fff; display: block; overflow: hidden; width: 60px; height: 60px; background-color: #5a807c; float: left; -khtml-border-radius: 30px; -moz-border-radius: 30px; -ms-border-radius: 30px; border-radius: 30px; -webkit-border-radius: 30px; margin: 0 20px 20px 0; box-shadow: 0px 1px 0px #fff; -moz-box-shadow: 0px 2px 0px #fff; -webkit-box-shadow: 0px 2px 0px #fff; }
+#newsdate { font-family: "BebasRegular", sans-serif; font-size: 10px; color: #fff; text-align: center; line-height: 16px; display: block; overflow: hidden; width: 60px; height: 60px; background-color: #5a807c; float: left; -khtml-border-radius: 30px; -moz-border-radius: 30px; -ms-border-radius: 30px; border-radius: 30px; -webkit-border-radius: 30px; margin: 0 20px 20px 0; box-shadow: 0px 1px 0px #fff; -moz-box-shadow: 0px 2px 0px #fff; -webkit-box-shadow: 0px 2px 0px #fff; }
 
 #newscontent { display: block; width: 340px; float: right; }
 
 p.news { font-size: 16px; line-height: 23px; }
 
 /* ################ music ######################## */
+#musicheadline { display: block; float: left; font-family: "BebasRegular", sans-serif; font-size: 31px; color: #3f4245; width: 420px; line-height: 30px; padding: 0 0 0 10px; }
+
+#artwork { float: left; width: 540px; background: #fff; }
+
+#soundcloud { width: 300px; float: right; }
+
+#soundcloud_item { width: 300px; float: right; }
+
 /* ################ band ######################## */
 h1.band { float: left; display: block; color: #a83d46; font-size: 65px; letter-spacing: -2px; margin: 20px 0 0 0; }
 
