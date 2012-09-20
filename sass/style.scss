@@ -1157,7 +1157,7 @@ time {
 }
 #newsdate {
 	font-family: "BebasRegular", sans-serif;
-	font-size: 10px;
+	font-size: 18px;
 	color: #fff;
 	text-align: center;
 	line-height: 16px;
@@ -1177,6 +1177,10 @@ time {
 	-moz-box-shadow: 0px 2px 0px #fff;
 	-webkit-box-shadow: 0px 2px 0px #fff;
 }
+p.published_at {
+	padding: 21px 0 0 0;
+}
+
 #newscontent {
 	display: block;
 	width: 340px;

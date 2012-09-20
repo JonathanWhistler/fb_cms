@@ -7,7 +7,7 @@ de:
   date:
     formats:
       default: "%d.%m"
-      short: "%e. %b"
+      short: "%e. %m"
       long: "%e. %B %Y"
       only_day: "%e"
       with_day_name: "%A, %e. %B %Y"
@@ -64,7 +64,7 @@ de:
   time:
     formats:
       default: "%A, %d. %B %Y, %H:%M Uhr"
-      short: "%d. %B, %H:%M Uhr"
+      short: "%d. %m"
       long: "%A, %d. %B %Y, %H:%M Uhr"
       time: "%H:%M"
       starting: "%A, %d. %B %Y, ab %H:%M Uhr"
