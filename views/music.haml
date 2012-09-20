@@ -1,7 +1,15 @@
 - @meta_title = "fewsel | listen to our music"
 - @meta_description = "listen to the rock music of fewsel"
 - @subheadline = "massive rock music from the wrong side of the universe"
-
+#fb-root
+:plain
+  <script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=139927012769828";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 %h1.band= "fewsel"
 #musicheadline= @subheadline
 
@@ -18,4 +26,5 @@
       %iframe{:frameborder => "no", :height => "166", :scrolling => "no", :src => "http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F22168010&auto_play=false&show_artwork=true&color=5a807c", :width => "100%"}
   #soundcloud_link
     %a{:alt => "listen to fewsel on soundcloud", :href => "http://soundcloud.com/fewselmusic"}
-      %img{:alt => "soundcloud", :src => "/images/soundcloud-link.jpg"}/   
+      %img{:alt => "soundcloud", :src => "/images/soundcloud-link.jpg"}/
+.fb-comments{"data-href" => "http://stormy-autumn-3139.herokuapp.com/music", "data-num-posts" => "5", "data-width" => "515"}

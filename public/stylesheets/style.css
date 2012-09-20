@@ -769,9 +769,9 @@ time { margin: 0 0 10px; }
 
 #leftcol { float: left; width: 420px; padding: 30px 0 0 0; }
 
-#rightcol { float: right; width: 420px; padding: 30px 0 0 0; }
+#rightcol { float: right; text-align: right; width: 400px; padding: 30px 0 0 20px; }
 
-#news { clear: both; width: 420px; margin: 0 0 40px 0px; }
+#news { clear: both; width: 420px; margin: 0 0 40px 0px; overflow: hidden; }
 
 #newsdate { font-family: "BebasRegular", sans-serif; font-size: 18px; color: #fff; text-align: center; line-height: 16px; display: block; overflow: hidden; width: 60px; height: 60px; background-color: #5a807c; float: left; -khtml-border-radius: 30px; -moz-border-radius: 30px; -ms-border-radius: 30px; border-radius: 30px; -webkit-border-radius: 30px; margin: 0 20px 20px 0; box-shadow: 0px 1px 0px #fff; -moz-box-shadow: 0px 2px 0px #fff; -webkit-box-shadow: 0px 2px 0px #fff; }
 
