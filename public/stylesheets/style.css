@@ -769,7 +769,7 @@ time { margin: 0 0 10px; }
 
 #leftcol { float: left; width: 420px; padding: 30px 0 0 0; }
 
-#rightcol { float: right; text-align: right; width: 400px; padding: 30px 0 0 20px; }
+#rightcol { float: right; width: 400px; padding: 30px 0 0 20px; }
 
 #news { clear: both; width: 420px; margin: 0 0 40px 0px; overflow: hidden; }
 
@@ -780,6 +780,8 @@ p.published_at { padding: 21px 0 0 0; }
 #newscontent { display: block; width: 340px; float: right; }
 
 p.news { font-size: 16px; line-height: 23px; }
+
+#twitter { width: 400px; padding: 0px; }
 
 /* ################ music ######################## */
 #musicheadline { display: block; float: left; font-family: "BebasRegular", sans-serif; font-size: 31px; color: #3f4245; width: 420px; line-height: 30px; padding: 0 0 0 10px; }
@@ -802,6 +804,8 @@ h1.red { display: block; color: #a83d46; font-size: 45px; letter-spacing: -2px; 
 #bandheadline { display: block; float: left; font-family: "BebasRegular", sans-serif; font-size: 31px; color: #3f4245; width: 180px; line-height: 30px; padding: 0 0 0 10px; }
 
 #band { padding: 20px 0 0 60px; }
+
+p.bio { font-size: 16px; line-height: 22px; }
 
 /* ################ tour ######################## */
 /* ################ media ######################## */

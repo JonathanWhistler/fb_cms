@@ -1147,7 +1147,6 @@ time {
 }
 #rightcol {
 	float:right;
-	text-align: right;
 	width: 400px;
 	padding: 30px 0 0 20px;
 }
@@ -1192,7 +1191,10 @@ p.news {
 	font-size: 16px;
 	line-height: 23px;
 }
-
+#twitter {
+	width: 400px;
+	padding: 0px;
+}
 
 /* ################ music ######################## */
 
@@ -1263,6 +1265,10 @@ h1.red {
 }
 #band {
 	padding: 20px 0 0 60px;
+}
+p.bio {
+	font-size: 16px;
+	line-height: 22px;
 }
 
 
